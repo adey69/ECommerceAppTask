@@ -31,6 +31,8 @@
 		B3F178952A0E9F7A00979C4F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3F178852A0E9F7A00979C4F /* EvilIcons.ttf */; };
 		B3F178962A0E9F7A00979C4F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3F178862A0E9F7A00979C4F /* SimpleLineIcons.ttf */; };
 		B3F178972A0E9F7A00979C4F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3F178872A0E9F7A00979C4F /* MaterialIcons.ttf */; };
+		D9230399DE994662A9B08A02 /* index.ts in Resources */ = {isa = PBXBuildFile; fileRef = B70484B47A774AF9A3B143FF /* index.ts */; };
+		A27A05DA13E34BA9B22FCC75 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C1515C5953F64A53BD13016F /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		B3F178862A0E9F7A00979C4F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		B3F178872A0E9F7A00979C4F /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B70484B47A774AF9A3B143FF /* index.ts */ = {isa = PBXFileReference; name = "index.ts"; path = "../src/assets/images/index.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1515C5953F64A53BD13016F /* placeholder.png */ = {isa = PBXFileReference; name = "placeholder.png"; path = "../src/assets/images/placeholder.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				201A36301A8C41A6A5397C16 /* dummy.png */,
+				B70484B47A774AF9A3B143FF /* index.ts */,
+				C1515C5953F64A53BD13016F /* placeholder.png */,
 			);
 			name = Resources;
 			path = "";
@@ -330,6 +336,8 @@
 				B3F1788D2A0E9F7A00979C4F /* MaterialCommunityIcons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				76D93C2368B6477FBEC12EF0 /* dummy.png in Resources */,
+				D9230399DE994662A9B08A02 /* index.ts in Resources */,
+				A27A05DA13E34BA9B22FCC75 /* placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

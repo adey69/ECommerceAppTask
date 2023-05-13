@@ -15,12 +15,14 @@ const CartPage = () => {
         <Text variant="headlineSmall">{CartText.productsInCart}</Text>
       </View>
       <FlatList
+        keyExtractor={item => item.id.toString()}
         contentContainerStyle={styles.listContainer}
         data={cartProducts}
         renderItem={({ item }) => (
           <CartItem
             productName={item.title}
             productPrice={item.price}
+            productImageUri={item.images[0] ?? ''}
             onRemovePressed={() => onRemoveFromCartPressed(item.id)}
           />
         )}

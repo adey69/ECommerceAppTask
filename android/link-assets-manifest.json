@@ -4,6 +4,14 @@
     {
       "path": "src/assets/images/dummy.png",
       "sha1": "67381099c0f1291f17ad79dd9754de825910b7cf"
+    },
+    {
+      "path": "src/assets/images/index.ts",
+      "sha1": "b719020be852ef181142aacd3d544c5a68202e16"
+    },
+    {
+      "path": "src/assets/images/placeholder.png",
+      "sha1": "cf50044dd0cf600f186f52ba0c22771af6b2dd88"
     }
   ]
 }

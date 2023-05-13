@@ -10,19 +10,27 @@ import styles from './styles';
 import { Text } from 'react-native-paper';
 import { CommonStyles } from '../../theme';
 import { CartText } from '../../strings';
+import RemoteImage from '../RemoteImage';
 
 interface ICartItemProps {
   productName: string;
   productPrice: string;
+  productImageUri: string;
   onRemovePressed: (event: GestureResponderEvent) => void;
 }
 
 const CartItem = (props: ICartItemProps) => {
-  const { productName, productPrice, onRemovePressed } = props;
+  const { productName, productPrice, productImageUri, onRemovePressed } = props;
   return (
     <View style={[CommonStyles.flex, styles.container]}>
       <View style={styles.leftContainer}>
-        <Image source={Images.dummyPhone} style={styles.productImage} />
+        <RemoteImage
+          source={{ uri: productImageUri ?? '' }}
+          defaultSource={Images.placeholderImage}
+          resizeMode="contain"
+          style={styles.productImage}
+          size={25}
+        />
         <View style={styles.detailsContainer}>
           <Text>{productName}</Text>
           <Text>{productPrice}</Text>

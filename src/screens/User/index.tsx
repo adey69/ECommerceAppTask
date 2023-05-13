@@ -4,6 +4,8 @@ import { useAppSelector } from '../../redux/hooks';
 import { authSelector } from '../../redux/selectors';
 import styles from './styles';
 import { UserDetailsText } from '../../strings';
+import { Images } from '../../assets';
+import { RemoteImage } from '../../components';
 
 const UserDetailsPage = () => {
   const { user } = useAppSelector(authSelector);
@@ -11,7 +13,13 @@ const UserDetailsPage = () => {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <Image source={{ uri: user?.image }} style={styles.image} />
+        <RemoteImage
+          source={{ uri: user?.image ?? '' }}
+          defaultSource={Images.placeholderImage}
+          resizeMode="contain"
+          style={styles.image}
+          size={25}
+        />
       </View>
       <View style={styles.detailsContainer}>
         <Text style={styles.name}>

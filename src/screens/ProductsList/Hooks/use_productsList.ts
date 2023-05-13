@@ -25,7 +25,7 @@ export default () => {
       const searchText = sanitizeText(searchStr).toLowerCase();
       if (searchText.length > 0) {
         setProductsToShow(
-          productsToShow.filter(product => {
+          products.filter(product => {
             const sanitizedTitle = sanitizeText(product.title).toLowerCase();
             return sanitizedTitle.includes(searchText);
           }),
@@ -62,6 +62,7 @@ export default () => {
   }, [productsToShow]);
 
   const clearFilter = useCallback(() => {
+    setSearchInput('');
     setProductsToShow(products);
   }, [products]);
 

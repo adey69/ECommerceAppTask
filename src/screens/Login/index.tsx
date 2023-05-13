@@ -44,6 +44,7 @@ const LoginPage = () => {
         placeholder={LoginText.password}
         placeholderTextColor={Colors.placeholderGrey}
         onChangeText={text => setPassword(text)}
+        secureTextEntry
       />
       {!!passwordError ? (
         <Text variant="bodyMedium" style={styles.errorText}>
